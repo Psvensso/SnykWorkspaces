@@ -2,12 +2,15 @@
   "name": "snykworkspaces",
   "version": "1.0.0",
   "description": "This project shows how to run Snyk on a yark workspaces project",
-
   "private": true,
-  "workspaces": ["workspace-a", "workspace-b"],
-
+  "workspaces": [
+    "workspace-a",
+    "workspace-b"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sectest": "snyk test --yarn-workspaces -d",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "yarn run sectest"
   },
   "repository": {
     "type": "git",
