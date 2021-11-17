@@ -1,0 +1,22 @@
+{
+  "name": "snykworkspaces",
+  "version": "1.0.0",
+  "description": "This project shows how to run Snyk on a yark workspaces project",
+
+  "private": true,
+  "workspaces": ["workspace-a", "workspace-b"],
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Psvensso/SnykWorkspaces.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Psvensso/SnykWorkspaces/issues"
+  },
+  "homepage": "https://github.com/Psvensso/SnykWorkspaces#readme"
+}
